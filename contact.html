@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AT</div>
+        
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section class="section">
+        <h1>Contact</h1>
+        <div class="contact-wrapper">
+        <div class="contact-text">
+        <h2>Get in Touch</h2>
+        <p>If you want to discuss a million dollar deal or hire me, feel free to message me!</p>
+        <a href="tel:0736974336"><i class="fa fa-phone" aria-hidden="true"> 0736974336</i></a> 
+        <br><br>
+        <a href="mailto:apheleletafile687@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> apheleletafile687@gmail.com</a>   
+        </div>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="Subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <br><br>
+            <a href="mailto:apheleletafile687@gmail.com" class="button">Send Message</a>
+        </form>
+        </div>
+        </section>
+
+    <footer>
+    <p>&copy; Aphelele Tafile</p>
+    <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=100016702803330" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/0736974336" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aphelele_tafile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/aphelele-tafile" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let subject = document.getElementById("subject").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let status = document.getElementById("formStatus");
+
+            if (!name || !email || !subject || !message) {
+                status.innerText = "Please fill out all fields.";
+                status.style.color = "red";
+                return;
+            }
+
+            if (!/^\S+@\S+\.\S+$/.test(email)) {
+                status.innerText = "Please enter a valid email.";
+                status.style.color = "red";
+                return;
+            }
+
+            status.innerText = "Thank you, " + name + "! Your message has been sent.";
+            status.style.color = "green";
+
+            document.getElementById("contactForm").reset();
+        });
+        
+            document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.getElementById("menu-toggle");
+            const icon = document.getElementById("menu-icon");
+            const nav = document.querySelector("nav");
+
+            toggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
+            toggle.classList.toggle("open");
+
+        if (toggle.classList.contains("open")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times");
+      } 
+        else {
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+      }
+    });
+  });
+</script>
+</body>
+</html>

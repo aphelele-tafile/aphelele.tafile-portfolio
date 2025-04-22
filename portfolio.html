@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AT</div>
+        
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+            <h1>Portfolio</h1>
+            <h2 class="text">Here are some projects I have built:</h2>
+        
+        <div class="projects-container">  
+            <div class="project">
+                <img src="images/business card img.png" alt="Business Card">
+                <div class="project-details">
+                    <h3>Business Card</h3>
+                    <p>A modern and minimalist one-page website designed to act as a digital business card. It showcases essential information such as your name, title, contact details, and links to your social platforms — all in a professional layout.
+                        <br><br>
+                        * Purpose: Personal branding and quick online identity reference.
+                        <br><br>
+                        * Technologies: HTML, CSS, Bootstrap.
+                        <br><br>
+                        *  Features: Responsive design, clickable contact links, simple and elegant layout.</p>
+                    <a href="https://aphelele-tafile.github.io/Business-Card/" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/link-tree.png" alt="Link Tree">
+                <div class="project-details">
+                    <h3>Link Tree Clone</h3>
+                    <p>Inspired by the popular Linktree service, this project offers users a central hub to share multiple links from a single page — perfect for social bios and content creators.
+                        <br><br>
+                        * Purpose: Centralized link-sharing page for social profiles and websites.
+                        <br><br>
+                        * Technologies: HTML, CSS, JavaScript.
+                        <br><br>
+                        * Features: Custom links, responsive layout, profile image and bio section, styled with clean modern UI.</p>
+                    <a href="https://aphelele-tafile.github.io/Linktree/" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/facebook.png" alt="Facebook Login Page Clone">
+                <div class="project-details">
+                    <h3>Facebook Login Page</h3>
+                    <p>A pixel-perfect clone of the Facebook login screen, created to practice UI design and layout replication. This project demonstrates an eye for detail and understanding of positioning, spacing, and responsive layout techniques.
+                        <br><br>
+                        * Purpose: UI/UX replication practice.
+                        <br><br>
+                        * Technologies: HTML, CSS, JavaScript.
+                        <br><br>
+                        * Features: Responsive login form, styled buttons and inputs, visual fidelity to the original design.</p>
+                    <a href="https://aphelele-tafile.github.io/Facebook-Login-Page/" class="btn">View Project</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <img src="images/to-do-app.png" alt="To Do App">
+                <div class="project-details">
+                    <h3>To Do App</h3>
+                    <p>A simple yet functional to-do list web application that helps users manage tasks effectively. This was a key project in improving JavaScript and DOM manipulation skills.
+                        <br><br>
+                        * Purpose: Task tracking and list management.
+                        <br><br>
+                        * Technologies: HTML, CSS, JavaScript.
+                        <br><br>
+                        * Features: Add, remove, and mark tasks as complete; dynamic DOM updates; clean and intuitive interface.</p>
+                    <a href="https://aphelele-tafile.github.io/To-Do-App/" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <p>&copy; Aphelele Tafile</p>
+    <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=100016702803330" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/0736974336" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aphelele_tafile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/aphelele-tafile" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const icon = document.getElementById("menu-icon");
+        const nav = document.querySelector("nav");
+
+        toggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+        toggle.classList.toggle("open");
+
+      if (toggle.classList.contains("open")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+      } 
+        else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

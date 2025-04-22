@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AT</div>
+        
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="container">
+        <h1>About Me</h1>
+        <h2>Hello, I'm Aphelele Tafile</h2>
+        <p>Hello! I’m Aphelele Tafile — a passionate and dedicated Frontend Developer recently graduated with a National Certificate in Systems Development from IT Varsity.
+        <br><br>
+        During my studies, I honed my skills in HTML, CSS, Bootstrap, and JavaScript — the core tools that now form the foundation of my development work. I take pride in building responsive, user-friendly, and visually appealing websites and web apps that work seamlessly across all devices.
+        <br><br>
+        While at IT Varsity, I also explored technologies beyond the front end, learning SQL, jQuery, and Java, which helped me understand the full web development lifecycle and how to integrate both frontend and backend functionality effectively.
+        <br><br>
+        Whether it’s crafting pixel-perfect layouts with CSS or bringing interactivity to life with JavaScript, I genuinely enjoy every step of the process. I'm always exploring new tools and frameworks to stay ahead and sharpen my skills.
+        <br><br>
+        I'm currently looking for an entry-level or junior frontend developer opportunity where I can contribute to real-world projects, continue learning, and grow within a collaborative team environment.
+        <br><br>
+        Feel free to explore my portfolio — you'll find work that reflects my attention to detail, passion for clean, efficient code, and drive to create meaningful digital experiences.</p>
+
+        <div class="skills-section">
+            <div class="skills-text">
+                <h3>My Skills</h3>
+                <p>I believe in the fact that learning never stops and I am interested in learning new technologies and programming languages that will help me design and develop a better output in less time.</p>
+            </div>
+            
+            <div class="skills-bars">
+                <div class="skill-container">
+                    <label>HTML</label>
+                <div class="skill-bar">
+                <div class="skill-fill" data-width="90%">90%</div>
+                </div>
+                </div>
+                
+            <div class="skill-container">
+                    <label>CSS</label>
+                <div class="skill-bar">
+                <div class="skill-fill" data-width="90%">90%</div>
+                </div>
+            </div>
+                
+            <div class="skill-container">
+                    <label>JavaScript</label>
+                <div class="skill-bar">
+                <div class="skill-fill" data-width="85%">85%</div>
+                </div>
+            </div>
+                
+            <div class="skill-container">
+                    <label>Bootstrap</label>
+                <div class="skill-bar">
+                <div class="skill-fill" data-width="80%">80%</div>
+                </div>
+            </div>
+                
+            <div class="skill-container">
+                    <label>Java</label>
+                <div class="skill-bar">
+                <div class="skill-fill" data-width="70%">70%</div>
+                </div>
+            </div>
+                
+            <div class="skill-container">
+                    <label>SQL</label>
+                <div class="skill-bar">
+                <div class="skill-fill" data-width="70%">70%</div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <p>&copy; 2025 Aphelele Tafile</p>
+    <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=100016702803330" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/0736974336" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aphelele_tafile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/aphelele-tafile" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+    
+    <script>
+        let animated = false;
+        function animateSkills() {
+        if (animated) return;
+        const fills = document.querySelectorAll('.skill-fill');
+        fills.forEach(fill => {
+        const width = fill.getAttribute('data-width');
+        fill.style.width = width;
+        fill.style.opacity = 1;
+    });
+        animated = true;
+  }
+
+        window.addEventListener('scroll', () => {
+        const skillSection = document.querySelector('.skill-container');
+        if (!skillSection) return;
+        const rect = skillSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+        animateSkills();
+    }
+  });
+
+  const toggleBtn = document
+        document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const icon = document.getElementById("menu-icon");
+        const nav = document.querySelector("nav");
+
+        toggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+        toggle.classList.toggle("open");
+
+      if (toggle.classList.contains("open")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+      } 
+        else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      }
+    });
+  });
+</script>
+</body>
+</html>

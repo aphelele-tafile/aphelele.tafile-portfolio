@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aphelele Tafile - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        
+        <div class="logo">AT</div>
+        
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+        
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm Aphelele Tafile</h1>
+            <p>I'm a Frontend Developer based in Cape Town, passionate about crafting user-friendly websites and web applications.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images/IMG-4901.jpg" alt="Aphelele Tafile">
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Aphelele Tafile</p>
+        <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=100016702803330" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/0736974336" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aphelele_tafile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/aphelele-tafile" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const icon = document.getElementById("menu-icon");
+        const nav = document.querySelector("nav");
+
+        toggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+        toggle.classList.toggle("open");
+
+      if (toggle.classList.contains("open")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+      } 
+        else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
