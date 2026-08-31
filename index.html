@@ -3,76 +3,883 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aphelele Tafile - Portfolio</title>
+
+    <title>Aphelele Tafile | Portfolio</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Header Section -->
+    <!-- ================= HEADER ================= -->
     <header>
-        
+
         <div class="logo">AT</div>
-        
+
         <div class="menu-toggle" id="menu-toggle">
             <i class="fas fa-bars" id="menu-icon"></i>
         </div>
-        
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
+
+    <!-- ================= HOME ================= -->
     <main>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Hello, I'm Aphelele Tafile</h1>
-            <p>I'm a Frontend Developer based in Cape Town, passionate about crafting user-friendly websites and web applications.</p>
-        </div>
-        <div class="hero-image">
-            <img src="images/IMG-4901.jpg" alt="Aphelele Tafile">
-        </div>
-    </section>
-    </main>
-    
+
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+
+                <div class="eyebrow">
+                    JUNIOR SOFTWARE DEVELOPER | FRONTEND DEVELOPER
+                </div>
+
+                <h1>
+                    Hello, I'm
+                    <span>Aphelele Tafile</span>
+                </h1>
+
+                <p>
+                    I build responsive, user-friendly websites and web applications, while continuously learning and growing as a developer.
+                </p>
+
+                <a href="#projects" class="btn">
+                    View My Projects <i class="fas fa-arrow-right"></i>
+                </a>
+                
+                <a href="CV/A Tafile resume.pdf" class="btn">
+                    Download CV <i class="fa-solid fa-download"></i>
+                </a>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img src="images/IMG-4901.jpg"
+                     alt="Aphelele Tafile">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <div class="section-title">
+
+                <h2>About Me</h2>
+
+                <p>
+                    A little bit about my journey, my skills and where I'm heading as a developer. 
+                </p>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h1>
+                    My journey
+                </h1><br>
+
+                <p>
+                    I'm Aphelele Tafile, a Junior Software Developer | Frontend Developer passionate about creating responsive, user-friendly websites and web applications. 
+                </p>
+
+                <p>
+                    I completed a National Certificate in Systems Development (NQF Level 5), which gave me a strong foundation in software development, programming concepts, and web technologies.
+                </p>
+
+                <p>
+                   Throughout my studies, I developed a foundation in HTML, CSS, JavaScript, and Bootstrap, where I learned how to structure, style, and create interactive web experiences. Since completing my qualification, I have continued developing my technical skills independently, including learning SQL and jQuery, while also exploring additional technologies through personal projects and hands-on practice. 
+                </p>
+                
+                <p>
+                    I particularly enjoy frontend development because it allows me to combine problem-solving with creativity. I enjoy creating clean layouts, responsive interfaces and interactive experiences that are easy for people to use. 
+                </p>
+                
+                <p>
+                    I'm also continuously expanding my technical knowledge by learning new technologies and building personal projects that challenge me to improve.Each project gives me an opportunity to strengthen my problem-solving skills, experiment with new ideas, and gain practical experience. 
+                </p>
+                
+                <p>
+                    I'm currently looking for an internship or junior software development opportunity where I can contribute to real-world projects, learn from experienced developers and grow within a collaborative team. 
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="skills-section" id="skills">
+
+            <div class="section-title">
+
+                <h2>Skills</h2>
+
+            </div>
+
+
+            <div class="skills-intro">
+
+                <p>I CONSTANTLY TRY TO</p>
+
+                <strong>
+                    LEARN · BUILD · IMPROVE
+                </strong>
+
+            </div>
+
+
+            <!-- Current Skills -->
+
+            <div class="skills">
+
+                <div class="skill-pill">
+                    <i class="fab fa-html5"></i>
+                    HTML
+                </div>
+
+                <div class="skill-pill">
+                    <i class="fab fa-css3-alt"></i>
+                    CSS
+                </div>
+
+                <div class="skill-pill">
+                    <i class="fab fa-js"></i>
+                    JavaScript
+                </div>
+
+                <div class="skill-pill">
+                    <i class="fab fa-bootstrap"></i>
+                    Bootstrap
+                </div>
+
+                <div class="skill-pill">
+                    <i class="fas fa-database"></i>
+                    SQL
+                </div>
+
+                <div class="skill-pill">
+                    <i class="fas fa-code"></i>
+                    jQuery
+                </div>
+
+                <div class="skill-pill">
+                    <i class="fab fa-wordpress"></i>
+                    WordPress
+                </div>
+
+                <div class="skill-pill">
+                    <i class="fas fa-puzzle-piece"></i>
+                    Elementor
+                </div>
+
+            </div>
+
+
+            <!-- Currently Learning -->
+
+            <div class="learning-title">
+                CURRENTLY LEARNING
+            </div>
+
+
+            <div class="skills learning-skills">
+
+                <div class="skill-pill learning">
+                    <i class="fas fa-code"></i>
+                    C#
+                </div>
+
+                <div class="skill-pill learning">
+                    <i class="fa-brands fa-react"></i>
+                    React
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="projects-section" id="projects">
+
+            <div class="section-title">
+
+                <h2>Selected Projects</h2>
+
+                <p>
+                    A selection of projects I've built to apply my development skills, solve practical problems, and create responsive, user-friendly experiences.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            JAVASCRIPT · FEATURED
+                        </span>
+
+                        <h3>
+                            To-Do App
+                        </h3>
+
+                        <p>
+                            A task-management application demonstrating
+                            DOM manipulation and interactive JavaScript.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://aphelele-tafile.github.io/To-Do-App/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                Live Demo
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                            <a href="https://github.com/aphelele-tafile/To-Do-App"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                GitHub
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            HTML · CSS
+                        </span>
+
+                        <h3>
+                            Digital Business Card
+                        </h3>
+
+                        <p>
+                            A responsive digital business card created
+                            to practise personal branding, layout and
+                            clickable contact links.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive Design</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://aphelele-tafile.github.io/Business-Card/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                Live Demo
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                            <a href="https://github.com/aphelele-tafile/Business-Card"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                GitHub
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <i class="fas fa-link"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            HTML · CSS
+                        </span>
+
+                        <h3>
+                            Linktree Clone
+                        </h3>
+
+                        <p>
+                            A centralized link-sharing page inspired
+                            by Linktree, featuring a responsive layout,
+                            profile section and custom links.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive Design</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://aphelele-tafile.github.io/Linktree/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                Live Demo
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                            <a href="https://github.com/aphelele-tafile/Linktree"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                GitHub
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 4 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            UI PRACTICE
+                        </span>
+
+                        <h3>
+                            Facebook Login Page
+                        </h3>
+
+                        <p>
+                            A responsive login-page recreation built
+                            to practise layout, spacing, form styling
+                            and JavaScript interaction.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://aphelele-tafile.github.io/Facebook-Login-Page/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                Live Demo
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                            <a href="https://github.com/aphelele-tafile/Facebook-Login-Page"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                GitHub
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+ <!-- ================= CONTACT HERO ================= -->
+
+        <section class="page-hero">
+
+            <div class="page-hero-content">
+
+                <p class="section-label">
+                    Contact
+                </p>
+
+
+                <h1>
+                    Let's work together.
+                </h1>
+
+
+                <p>
+
+                    I'm currently open to junior developer
+                    opportunities, internships and collaborative
+                    projects.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section">
+
+
+            <div class="contact-grid">
+
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact-info">
+
+
+                    <p class="section-heading">
+                        Get in touch
+                    </p>
+
+                    <p class="contact-description">
+
+                        Whether you have an opportunity,
+                        project or simply want to connect,
+                        feel free to reach out.
+
+                    </p>
+
+
+
+                    <!-- Email -->
+
+                    <a
+                        href="mailto:apheleletafile687@gmail.com"
+                        class="contact-item">
+
+                        <span class="contact-icon">
+
+                            <i class="fas fa-envelope"></i>
+
+                        </span>
+
+
+                        <span>
+
+                            <small>
+                                Email
+                            </small>
+
+                            apheleletafile687@gmail.com
+
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- Phone -->
+
+                    <a
+                        href="tel:0736974336"
+                        class="contact-item">
+
+                        <span class="contact-icon">
+
+                            <i class="fas fa-phone"></i>
+
+                        </span>
+
+
+                        <span>
+
+                            <small>
+                                Phone
+                            </small>
+
+                            073 697 4336
+
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- Location -->
+
+                    <div class="contact-item">
+
+                        <span class="contact-icon">
+
+                            <i class="fas fa-location-dot"></i>
+
+                        </span>
+
+
+                        <span>
+
+                            <small>
+                                Location
+                            </small>
+
+                            Cape Town, South Africa
+
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- GitHub -->
+
+                    <a
+                        href="https://github.com/aphelele-tafile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item">
+
+                        <span class="contact-icon">
+
+                            <i class="fab fa-github"></i>
+
+                        </span>
+
+
+                        <span>
+
+                            <small>
+                                GitHub
+                            </small>
+
+                            github.com/aphelele-tafile
+
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-form-wrapper">
+
+
+                    <form
+                        id="contactForm"
+                        action="https://formsubmit.co/apheleletafile687@gmail.com"
+                        method="POST">
+
+
+                        <!-- FormSubmit settings -->
+
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="New Portfolio Contact">
+
+                        <input
+                            type="hidden"
+                            name="_captcha"
+                            value="false">
+
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="your@email.com"
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What would you like to discuss?"
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Write your message..."
+                                required>
+                            </textarea>
+
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            class="btn primary-btn">
+
+                            Send Message
+
+                            <i
+                                class="fas fa-arrow-right">
+                            </i>
+
+                        </button>
+
+
+                        <p
+                            id="formStatus"
+                            class="form-status">
+                        </p>
+
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+</main>
+     
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>&copy; 2025 Aphelele Tafile</p>
+
+        <p>
+            © 2026 Aphelele Tafile
+        </p>
+
+
         <div class="social-icons">
-        <a href="https://web.facebook.com/profile.php?id=100016702803330" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://wa.me/0736974336" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/aphelele_tafile" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/aphelele-tafile" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-</footer>
-    
+
+            <a href="https://github.com/aphelele-tafile"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+            
+            <a
+                    href="mailto:apheleletafile@gmail.com"
+                    aria-label="Email">
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
     <script>
+
         document.addEventListener("DOMContentLoaded", function () {
-        const toggle = document.getElementById("menu-toggle");
-        const icon = document.getElementById("menu-icon");
-        const nav = document.querySelector("nav");
 
-        toggle.addEventListener("click", function () {
-        nav.classList.toggle("active");
-        toggle.classList.toggle("open");
+            const toggle =
+                document.getElementById("menu-toggle");
 
-      if (toggle.classList.contains("open")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-times");
-      } 
-        else {
-        icon.classList.remove("fa-times");
-        icon.classList.add("fa-bars");
-      }
-    });
-  });
-</script>
+            const icon =
+                document.getElementById("menu-icon");
+
+            const nav =
+                document.getElementById("nav");
+
+
+            toggle.addEventListener("click", function () {
+
+                nav.classList.toggle("active");
+
+                toggle.classList.toggle("open");
+
+
+                if (toggle.classList.contains("open")) {
+
+                    icon.classList.remove("fa-bars");
+
+                    icon.classList.add("fa-times");
+
+                } else {
+
+                    icon.classList.remove("fa-times");
+
+                    icon.classList.add("fa-bars");
+
+                }
+
+            });
+
+
+            /* Close menu after clicking a link */
+
+            const navLinks =
+                document.querySelectorAll("nav a");
+
+
+            navLinks.forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    nav.classList.remove("active");
+
+                    toggle.classList.remove("open");
+
+                    icon.classList.remove("fa-times");
+
+                    icon.classList.add("fa-bars");
+
+                });
+
+            });
+
+        });
+
+    </script>
 
 </body>
 </html>
