@@ -1302,6 +1302,71 @@ footer p {
 
 }
 
+/* CONTACT FORM - PHONE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form-wrapper form {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+}
+
+/* PHONE SCREEN FIX */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+
+    * {
+        max-width: 100%;
+    }
+
+    header,
+    main,
+    section,
+    footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero,
+    .about,
+    .skills-section,
+    .projects-section,
+    .contact-section {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-wrapper form {
+        width: 100%;
+    }
+
+}
 
 
 
