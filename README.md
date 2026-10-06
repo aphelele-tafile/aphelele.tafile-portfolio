@@ -21,7 +21,7 @@ Currently Learning
 - React
 
 ## 🔗 Live Demo
-[View Portfolio Site](https://aphelele-tafile.github.io/aphelele.tafile-portfolio/)
+[View Portfolio Site](https://apheleletafile-portfolio.netlify.app/)
 
 ## 🚀 Current Goals
 I'm currently looking for an internship or junior software development opportunity where I can contribute to real-world projects, learn from experienced developers, and continue growing within a collaborative team.
